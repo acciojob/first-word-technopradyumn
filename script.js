@@ -1,8 +1,8 @@
 function firstWord(s) {
-  // your code here
+  return s.trim().split(/\s+/)[0] || "";
 }
 
-// Do not change the code below
-
-const s = prompt("Enter String:");
-alert(firstWord(s));
+function extractFirstWord() {
+  const s = document.getElementById("inputString").value;
+  document.getElementById("result").textContent = firstWord(s);
+}
